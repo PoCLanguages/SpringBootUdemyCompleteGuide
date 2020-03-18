@@ -1,0 +1,40 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+
+server:
+  port: 9090
+
+default:
+  course:
+    name: Tan Kin Tat
+    chapterCount: 80
+
+course:
+  name: Data Structure
+  chapterCount: 88
+  rating: 5
+  author: Tan Kin Tat
+
+---
+spring:
+  profiles: qa
+
+server:
+  port: 9191
+
+default:
+  course:
+    name: Tan Kin Tat
+    chapterCount: 888
+
+course:
+  name: Data Structure?
+  chapterCount: 88
+  rating: 5
+  author: Tan Kin Tat
+

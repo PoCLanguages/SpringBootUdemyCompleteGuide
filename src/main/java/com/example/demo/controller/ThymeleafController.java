@@ -10,11 +10,11 @@ public class ThymeleafController {
 
     private DashboardService dashboardService;
 
-    @GetMapping("/")
+    @GetMapping("/dashboard")
     public String getDashDetail(Model model){
         String texto = "aaaai";
         model.addAttribute("texto", texto);
-        return "/index";
+        return "/dashboard";
     }
 
 
